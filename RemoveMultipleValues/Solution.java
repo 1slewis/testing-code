@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Solution {
     public static int count(int[] data, int i) {
@@ -29,7 +30,11 @@ public class Solution {
         int[] output = ArrayList2intArray(outputArrayList);
         return output;
     }
+    public static void main(String[] args) {
+		int[] res1 = Solution.solution(new int[]{1, 2, 3}, 0);
+		int[] res2 = Solution.solution(new int[]{1, 2, 2, 3, 3, 3, 4, 5, 5}, 1); // [1,4]
+		System.out.println(Arrays.toString(res1));
+		System.out.println(Arrays.toString(res2));
+		return;
+	}
 }
-
-Solution.solution({1, 2, 3}, 0);
-Solution.solution({1, 2, 2, 3, 3, 3, 4, 5, 5}, 1); //[1,4]
